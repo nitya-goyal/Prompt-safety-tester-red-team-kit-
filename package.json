@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": { "start": "node server.js", "test": "node --test", "check": "node --check server.js && node --check public/app.js && node --check public/engine.js" },
+  "scripts": { "start": "node server.js", "build:site": "node scripts/build-site.js", "test": "node --test", "check": "node --check server.js && node --check public/app.js && node --check public/engine.js && node --check scripts/build-site.js" },
   "engines": { "node": ">=22" }
 }
